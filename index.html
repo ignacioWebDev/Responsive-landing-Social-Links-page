@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: #000;
+      margin-top: 3%;
+      font-family: Inter;
+    }
+    .flex-container{
+      display: flex; 
+      justify-content: center;
+    }
+    h1{
+      color: #fff; 
+      font-size: 2.5rem;
+    }
+    h3{
+      color: #c5f82a; 
+      font-size: 1.4rem;
+    }
+    p{color: #aaa; font-size: 1.1rem;}
+    .div{
+      width: 25%;
+      background-color: #222;
+      border-radius: 10px;
+      padding: 40px;
+      text-align: center;
+    }
+    img{
+      border-radius: 50%;
+    }
+    .div-grid{
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+    .div-grid input{
+      padding: 20px;
+      width: 90%;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      border-radius: 10px;
+      color: #fff;
+      background-color: #333;
+      border-style: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+    @media (max-width: 1024px) {
+      body{
+        margin-top: 8%;
+      }
+      .flex-container{
+        margin: 30px;
+      }
+      .div{
+        width: 30%;
+      }
+      .div-grid input{
+        width: 100%;
+        padding: 15px;
+        font-size: 1.1rem;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      h3{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: .9rem;
+      }
+    }
+    @media (max-width: 768px) {
+      body{
+        margin-top: 9%;
+      }
+      .div{
+        width: 35%;
+      }
+      .div-grid input{
+        padding: 10px;
+        font-size: 1rem;
+      }
+      h1{
+        font-size: 1.7rem;
+      }
+      h3{
+        font-size: 1rem;
+      }
+      p{
+        font-size: .8rem;
+      }
+    }
+    @media (max-width: 425px) {
+      .div{
+        width: 55%;
+      }
+      .div-grid input{
+        padding: 8px;
+        font-size: .7rem;
+      }
+      h1{
+        font-size: 1rem;
+      }
+      h3{
+        font-size: .6rem;
+      }
+      p{
+        font-size: .5rem;
+      }
+      img{
+        width: 50%;
+      }
+    }
+    @media (max-width: 320px) {
+      .div{
+        width: 60%;
+      }
+      p{
+        font-size: .45rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="flex-container">
+    <div class="div">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica">
+      <h1>Jessica Randall</h1>
+      <h3>London, United Kingdom</h3>
+      <p>"Front-end developer and avid reader."</p>
+  
+      <div class="div-grid">
+        <input value="Github" type="button" onclick="location.href='https://github.com/ignacioWebDev'">
+        <input value="Frontend Mentor" type="button" onclick="location.href='https://www.frontendmentor.io/home'">
+        <input value="Linkedin" type="button" onclick="location.href='https://www.linkedin.com/in/ignacio-b-9a872a233/'">
+        <input value="Twitter" type="button" onclick="location.href='https://twitter.com/?lang=en'">
+        <input value="Instagram" type="button" onclick="location.href='https://www.instagram.com/'">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/ignacioWebDev"><i><b>Ignacio Bortolin</b></i></a></p>
+    </div>
+  </footer>
+</body>
+</html>
